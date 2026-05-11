@@ -53,7 +53,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-display font-semibold text-foreground">Email</h4>
-                <a href="mailto:info@avikatradingcompany.com" className="text-primary font-body text-sm hover:underline">
+                <a href="mailto: abhishek choudharyorg" className="text-primary font-body text-sm hover:underline">
                   info@avikatradingcompany.com
                 </a>
               </div>
