@@ -73,7 +73,7 @@ const Navbar = () => {
             ))}
           </ul>
           <a
-            href="https://wa.me/919876543210"
+            href="https://wa.me/918770552411"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-3 inline-flex items-center gap-2 rounded-full bg-secondary px-5 py-2.5 text-sm font-semibold text-secondary-foreground"
