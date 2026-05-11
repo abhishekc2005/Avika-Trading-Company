@@ -9,25 +9,27 @@ const ContactSection = () => {
     e.preventDefault();
 
     try {
-      await emailjs.sendForm(
+      const result = await emailjs.sendForm(
         "service_hl25s8e",
         "template_uxq8loi",
         e.currentTarget,
         "Blh8gMgPbrasbh03t"
       );
 
+      console.log("Email sent successfully:", result);
+
       setSubmitted(true);
       e.currentTarget.reset();
 
     } catch (error) {
-      console.error(error);
-      alert("Failed to send message");
+      console.error("EmailJS Error:", error);
     }
   };
 
   return (
     <section id="contact" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
+
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-xs font-semibold tracking-wider text-primary uppercase font-body">
             Reach Out
@@ -106,6 +108,7 @@ const ContactSection = () => {
           {submitted ? (
             <div className="flex items-center justify-center rounded-2xl bg-card p-8 shadow-card text-center">
               <div>
+
                 <div className="mx-auto mb-4 h-14 w-14 rounded-full bg-secondary/20 flex items-center justify-center text-secondary">
                   <Send className="h-6 w-6" />
                 </div>
@@ -117,6 +120,7 @@ const ContactSection = () => {
                 <p className="text-muted-foreground font-body text-sm">
                   We'll get back to you shortly.
                 </p>
+
               </div>
             </div>
           ) : (
