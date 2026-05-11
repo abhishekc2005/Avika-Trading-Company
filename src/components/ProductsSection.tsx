@@ -68,7 +68,7 @@ const ProductsSection = () => {
                   {p.description}
                 </p>
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/918770552411"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-honey-amber transition-colors font-body"
